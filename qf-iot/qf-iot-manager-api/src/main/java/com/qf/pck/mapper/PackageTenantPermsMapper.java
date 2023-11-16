@@ -9,7 +9,7 @@ import com.qf.pck.entity.PackageTenantPerms;
  * </p>
  *
  * 
- *  2023-11-29
+ *  2023-11-19
  */
 public interface PackageTenantPermsMapper extends BaseMapper<PackageTenantPerms> {
 

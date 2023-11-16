@@ -9,7 +9,7 @@ import com.qf.device.entity.DeviceType;
  * </p>
  *
  * Jerforce
- *  2023-11-26
+ *  2023-11-19
  */
 public interface DeviceTypeMapper extends BaseMapper<DeviceType> {
 

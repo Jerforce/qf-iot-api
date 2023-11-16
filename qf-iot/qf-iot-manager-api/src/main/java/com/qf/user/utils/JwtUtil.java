@@ -12,7 +12,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class JwtUtil {
-    private static final String salt = "wangbiao";
+    private static final String salt = "CNM";
     public static String generatorMINUTEToken(Object user,Integer expire){
 
         Calendar instance = Calendar.getInstance();

@@ -12,7 +12,7 @@ import com.qf.tenant.entity.Tenant;
  * </p>
  *
  * 
- *  2023-11-26
+ *  2023-11-19
  */
 public interface TenantService extends IService<Tenant> {
 

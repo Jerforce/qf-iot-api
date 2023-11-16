@@ -17,12 +17,12 @@ import java.util.Date;
  * </p>
  *
  * @author
- *  2023-11-29
+ *  2023-11-19
  */
 @RestController
 @RequestMapping("/package")
 @CrossOrigin
-@PreAuthorize("hasAuthority('sys:pck:select')")
+/*@PreAuthorize("hasAuthority('sys:pck:select')")*/
 public class PackageController {
     @Autowired
     private PackageService packageService;
@@ -43,6 +43,7 @@ public class PackageController {
     public R all() {
         return packageService.all();
     }
+
     @RequestMapping("/delete/{pckId}")
     public R delete(@PathVariable String pckId) {
         packageService.removeById(pckId);

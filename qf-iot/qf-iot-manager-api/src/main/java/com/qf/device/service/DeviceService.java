@@ -11,7 +11,7 @@ import com.qf.device.entity.Device;
  * </p>
  *
  * Jerforce
- *  2023-11-26
+ *  2023-11-19
  */
 public interface DeviceService extends IService<Device> {
     PageResult page(PageDTO<Device> pageDTO);

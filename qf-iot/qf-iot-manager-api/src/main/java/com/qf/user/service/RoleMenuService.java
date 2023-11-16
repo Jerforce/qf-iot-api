@@ -9,7 +9,7 @@ import com.qf.user.entity.RoleMenu;
  * </p>
  *
  * 
- *  2023-11-28
+ *  2023-11-18
  */
 public interface RoleMenuService extends IService<RoleMenu> {
 

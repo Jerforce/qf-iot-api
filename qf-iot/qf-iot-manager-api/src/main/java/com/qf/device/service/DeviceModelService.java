@@ -9,7 +9,7 @@ import com.qf.device.entity.DeviceModel;
  * </p>
  *
  * Jerforce
- *  2023-11-26
+ *  2023-11-19
  */
 public interface DeviceModelService extends IService<DeviceModel> {
 

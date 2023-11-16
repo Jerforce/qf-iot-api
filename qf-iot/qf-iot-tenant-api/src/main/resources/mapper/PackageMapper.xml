@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qf.pck.mapper.PackageMapper">
-    <select id="selectPerms" resultType="Package">
-        SELECT package.* FROM  qf_tenant left join package_order on qf_tenant.id=package_order.tenant_id left join package on package.id=package_order.package_id WHERE  package_order.pay_status=1 and tenant_id=#{id}
-    </select>
-</mapper>

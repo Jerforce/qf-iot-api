@@ -23,12 +23,12 @@ import java.util.List;
  * </p>
  *
  * Jerforce
- *  2023-11-26
+ *  2023-11-19
  */
 @RestController
 @RequestMapping("/device")
 @CrossOrigin
-@PreAuthorize("hasAuthority('sys:device:select')")
+/*@PreAuthorize("hasAuthority('sys:device:select')")*/
 public class DeviceController {
 
     @Autowired

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/*
 @ControllerAdvice
 @ResponseBody
 public class ExceptionResolver {
@@ -14,3 +15,4 @@ public class ExceptionResolver {
         return  new R(false,403,"您没有权限访问目标资源",null);
     }
 }
+*/

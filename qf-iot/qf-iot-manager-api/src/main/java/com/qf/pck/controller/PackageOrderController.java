@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * 
- *  2023-11-29
+ *  2023-11-19
  */
 @RestController
 @RequestMapping("/package-order")
 @CrossOrigin
-@PreAuthorize("hasAuthority('sys:order:select')")
+/*@PreAuthorize("hasAuthority('sys:order:select')")*/
 public class PackageOrderController {
 
     @Autowired

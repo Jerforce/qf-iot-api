@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * 
- *  2023-11-26
+ *  2023-11-19
  */
 @Mapper
 public interface TenantMapper extends BaseMapper<Tenant> {

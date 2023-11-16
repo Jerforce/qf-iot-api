@@ -15,12 +15,12 @@ import java.util.List;
  * </p>
  *
  * 
- *  2023-11-29
+ *  2023-11-19
  */
 @RestController
 @RequestMapping("/package-tenant-perms")
 @CrossOrigin
-@PreAuthorize("hasAuthority('sys:perm:select')")
+/*@PreAuthorize("hasAuthority('sys:perm:select')")*/
 public class PackageTenantPermsController {
 
     @Autowired

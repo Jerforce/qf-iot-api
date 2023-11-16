@@ -28,7 +28,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/product")
 @CrossOrigin
-@PreAuthorize("hasAuthority('sys:product:select')")
+/*@PreAuthorize("hasAuthority('sys:product:select')")*/
 public class ProductController {
     @Autowired
     private ProductService productService;

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * Jerforce
- *  2023-11-26
+ *  2023-11-19
  */
 @RestController
 @RequestMapping("/device-model")

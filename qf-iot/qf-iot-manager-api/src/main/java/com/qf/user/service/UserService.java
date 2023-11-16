@@ -10,7 +10,7 @@ import com.qf.user.entity.User;
  * </p>
  *
  * 
- *  2023-11-28
+ *  2023-11-18
  */
 public interface UserService extends IService<User> {
     R login(User user);

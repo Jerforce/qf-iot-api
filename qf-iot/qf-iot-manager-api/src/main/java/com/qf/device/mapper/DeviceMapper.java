@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * Jerforce
- *  2023-11-26
+ *  2023-11-19
  */
 @Mapper
 public interface DeviceMapper extends BaseMapper<Device> {

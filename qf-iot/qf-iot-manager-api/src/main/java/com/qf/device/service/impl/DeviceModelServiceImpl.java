@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * Jerforce
- *  2023-11-26
+ *  2023-11-19
  */
 @Service
 public class DeviceModelServiceImpl extends ServiceImpl<DeviceModelMapper, DeviceModel> implements DeviceModelService {

@@ -10,7 +10,7 @@ import com.qf.user.entity.UserRole;
  * </p>
  *
  * 
- *  2023-11-28
+ *  2023-11-18
  */
 public interface UserRoleMapper extends BaseMapper<UserRole> {
     User login(String username);

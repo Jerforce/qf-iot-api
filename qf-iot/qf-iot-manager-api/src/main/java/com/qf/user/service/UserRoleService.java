@@ -9,7 +9,7 @@ import com.qf.user.entity.UserRole;
  * </p>
  *
  * 
- *  2023-11-28
+ *  2023-11-18
  */
 public interface UserRoleService extends IService<UserRole> {
 
