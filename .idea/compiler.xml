@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="qf-iot-generator" />
+        <module name="qf-iot-tenant-api" />
+        <module name="qf-iot-manager-api" />
+        <module name="qf-iot-sms-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="qf-iot" target="1.8" />
+      <module name="qf-iot-generator" target="1.8" />
+      <module name="qf-iot-manager-api" target="1.8" />
+      <module name="qf-iot-sms-api" target="1.8" />
+      <module name="qf-iot-tenant-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="qf-iot-generator" options="-parameters" />
+      <module name="qf-iot-manager-api" options="-parameters" />
+      <module name="qf-iot-sms-api" options="-parameters" />
+      <module name="qf-iot-tenant-api" options="-parameters" />
+    </option>
+  </component>
+</project>

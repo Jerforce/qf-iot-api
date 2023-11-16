@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.user.mapper.UserMapper">
+
+    <resultMap id="UserMap" type="User">
+        <id column="id" property="id"></id>
+        <result column="nick_name" property="nickName"></result>
+        <result column="real_name" property="realName"></result>
+        <result column="user_name" property="userName"></result>
+        <result column="password" property="password"></result>
+        <result column="phone" property="phone"></result>
+        <result column="email" property="email"></result>
+        <result column="enable" property="enable"></result>
+        <result column="description" property="description"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="update_time" property="updateTime"></result>
+        <result column="deleted" property="deleted"></result>
+        <collection property="menuList" ofType="com.qf.user.entity.Menu">
+            <id column="mid" property="id"></id>
+            <result column="name" property="name"></result>
+            <result column="parent_id" property="parentId"></result>
+            <result column="url" property="url"></result>
+            <result column="perms" property="perms"></result>
+            <result column="type" property="type"></result>
+            <result column="icon" property="icon"></result>
+            <result column="order_num" property="orderNum"></result>
+            <result column="mcreate_time" property="createTime"></result>
+        </collection>
+    </resultMap>
+
+
+    <select id="login" resultMap="UserMap">
+        SELECT qf_user.*,qf_menu.id as mid,name,parent_id,url,perms,type,icon,order_num,qf_menu.create_time as mcreate_time FROM qf_user left join qf_user_role on qf_user.id=qf_user_role.user_id left join qf_role_menu on qf_user_role.role_id=qf_role_menu.role_id left join qf_menu on qf_role_menu.menu_id = qf_menu.id where qf_user.user_name=#{username}
+    </select>
+</mapper>
