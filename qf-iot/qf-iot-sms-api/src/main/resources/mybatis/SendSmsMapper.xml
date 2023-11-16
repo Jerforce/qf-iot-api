@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.SendSmsMapper">
+    <select id="selectPhone" parameterType="java.lang.String" resultType="com.qf.pojo.TenantsPhone">
+        SELECT * FROM TenantsPhone WHERE phone =#{phone}
+    </select>
+    <insert id="insertPhoneCode" >
+        insert into phoneCode(phoneCode,format) values (#{phoneCode},#{format})
+</insert>
+</mapper>
