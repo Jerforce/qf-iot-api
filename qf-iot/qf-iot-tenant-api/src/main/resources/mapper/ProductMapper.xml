@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.product.mapper.ProductMapper">
+
+    <resultMap id="productMap" type="com.qf.product.mapper.ProductMapper">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="product_key" property="productKey"/>
+        <result column="username" property="username"/>
+        <result column="areaName" property="areaName"/>
+        <result column="tenantName" property="tenantName"/>
+    </resultMap>
+    <select id="selectAll" resultMap="productMap">
+        select q.id,
+        q.name,
+        q.product_key,
+        q.username,
+        qa.name areaName,
+        qt.name tenantName
+        from qf_product q
+        left join qf_area qa on qa.code = q.area_code
+        left join qf_tenant qt on q.tenant_id = qt.id
+        <where>
+            <if test="vo.name != null and vo.name != ''">
+                and q.name like concat('%',#{vo.name},'%')
+            </if>
+            <if test="vo.productKey != null and vo.productKey != ''">
+                and q.product_key like concat('%',#{vo.productKey},'%')
+            </if>
+            <if test="vo.username != null and vo.username != ''">
+                and q.username like concat('%',#{vo.username},'%')
+            </if>
+            <if test="vo.areaName !=null and vo.areaName != ''">
+                and qa.name =#{vo.areaName}
+            </if>
+        </where>
+    </select>
+</mapper>
