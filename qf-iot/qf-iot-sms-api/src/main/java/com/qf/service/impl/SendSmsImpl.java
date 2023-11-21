@@ -18,6 +18,6 @@ public class SendSmsImpl implements SendSms {
          * @param phone 手机号
          * @param param 参数
          */
-        SMSUtils.sendMessage("测试专用模板", "SMS_154950909", "17683869992", "1234");
+        SMSUtils.sendMessage("测试专用模板", "SMS_1XXXX909", "1768XXXX992", "1234");
     }
 }
