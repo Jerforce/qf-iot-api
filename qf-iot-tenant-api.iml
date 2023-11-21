@@ -3,6 +3,7 @@
   <component name="FacetManager">
     <facet type="web" name="Web">
       <configuration>
+
         <webroots />
         <sourceRoots>
           <root url="file://$MODULE_DIR$/qf-iot/qf-iot-tenant-api/src/main/java" />
