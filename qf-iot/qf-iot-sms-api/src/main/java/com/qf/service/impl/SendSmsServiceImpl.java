@@ -28,7 +28,7 @@ public class SendSmsServiceImpl implements SendSmsService {
         //连接aliyun
         //调用发送短信的方法
 
-        DefaultProfile profile = DefaultProfile.getProfile("cn-shanghai", "LTAI5tAW5zwPU3iNebfjbcpf", "8SZZFq736PvFGdQJ9EUIJegUO8ATsb");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-shanghai", "LXXXXXXXXXXjbcpf", "8SZZFq73XXXXXXXXXXXXTsb");
         IAcsClient client = new DefaultAcsClient(profile);
 
         //构建请求
