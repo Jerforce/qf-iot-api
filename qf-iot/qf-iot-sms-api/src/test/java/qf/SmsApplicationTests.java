@@ -17,6 +17,6 @@ public class SmsApplicationTests {
          * @param phone 手机号
          * @param param 参数
          */
-        SMSUtils.sendMessage("阿里云短信测试", "SMS_154950909", "15979111501", "9527");
+        SMSUtils.sendMessage("阿里云短信测试", "SXXXXXXX9", "1XXXXXXXXXX501", "9527");
     }
 }
